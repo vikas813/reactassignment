@@ -1,0 +1,16 @@
+let arr1=[1,2,3,5,7,1,5,9,7];
+let arr2=[];
+for(let i=0;i<arr1.length;i++)
+  {
+    let isDuplicate=false;
+    for(let j=0;j<arr2.length;j++){
+      if(arr1[i]===arr2[j]){
+        isDuplicate=true;
+        break;
+      }
+    }
+    if(!isDuplicate){
+      arr2.push(arr1[i]);
+    }
+    alert(arr2);
+  }
